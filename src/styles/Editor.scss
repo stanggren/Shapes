@@ -1,0 +1,51 @@
+/* Reusable classses  */
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.center {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.z-top {
+    z-index: 200;
+    position: relative;
+}
+.color-dark{
+    color: color(textDark);
+}
+
+
+/* Specific elements */
+
+.editor{
+    h1 {
+        font-size: 6rem;
+        letter-spacing: 20px;
+        text-transform: uppercase;
+        padding-bottom: 2rem;
+    }
+    .container {
+        .content {
+            width: 30rem;
+            height: 40rem;
+            background: rgba(50,89,109, 0.8);
+        }
+        div:nth-child(1){
+            border-radius: 2rem 0 0 2rem;
+        }
+        div:nth-child(2){
+            border-radius: 0 2rem 2rem 0;
+        }
+    }
+}
+
+
+
+
