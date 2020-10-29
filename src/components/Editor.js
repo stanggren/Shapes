@@ -3,14 +3,15 @@ import '../App.scss';
 import '../styles/Editor.scss'
 function Editor() {
   const [radio, setRadio] = useState("box");
+  
   return (
-    <div class="editor z-top">
-        <h1 class="center">Editor</h1>
-        <div class="container row center">
-          <div class="content">
-            <div class="column">
+    <div className="editor z-top">
+        <h1 className="center">Editor</h1>
+        <div className="container row center">
+          <div className="content">
+            <div className="column">
               <p>Geometries: {radio} </p>
-              <form class="column">
+              <form className="column">
                 <label>
                 <input type="radio" value="box" checked={radio === "box"} onChange={(e) => {setRadio(e.target.value)}}/> Box
                 </label>
@@ -28,7 +29,7 @@ function Editor() {
                 <div>
                   <div>
                     <p>Width</p>
-                    <input type="range" min="1" max="100" value="50" />
+                    {/* <input type="range" min="1" max="100" value="50" onChange={handleOnChange} /> */}
                   </div>
                   <div>
                     <p>Height</p>
@@ -98,7 +99,7 @@ function Editor() {
                 : null}
             </div>
           </div>
-          <div class="content">
+          <div className="content">
           </div>
         </div>
     </div>

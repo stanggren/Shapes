@@ -4,6 +4,9 @@ import "../styles/Landing.scss";
 import { Link } from "react-router-dom";
 import { TweenMax, Power3 } from "gsap";
 
+import styled from 'styled-components';
+
+
 function Landing() {
   let shapesText = useRef(null);
   let ampersand = useRef(null);
